@@ -1,0 +1,43 @@
+body {
+  background-color: #211A60;
+}
+
+.weather {
+  background-color: #122066;
+  position: absolute;
+  max-width: 500px;
+  max-height: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #211A60;
+  border-radius: 20px;
+  
+}
+
+.weather .city h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.weather .weather-icon img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.weather .temperature h1{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.weather .weather-status p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
