@@ -19,7 +19,7 @@ function App() {
 
 
   function showWeatherStatus(data) {
-    axios.get(`http://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY=${data}&aqi=yes`).then(function(res){
+    axios.get(`http://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${data}&aqi=yes`).then(function(res){
       setWeatherStatus(res.data.current.condition.text)
       setTemperature(res.data.current.temp_c);
       setIcon(res.data.current.condition.icon);
